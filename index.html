@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiemTra2</title>
+    <style>
+        table{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        label{
+            font-size: 15px;
+        }
+        input{
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .expend{
+            margin-top: 30px;
+        }
+
+        .table1{
+            border-collapse: collapse;
+        }
+    </style>
+    
+</head>
+<body>
+    <table >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Địa chỉ</th>
+                <th>Giới tính</th>
+                <th>Số điện thoại</th>
+                <th>Ảnh đại diện</th>
+                <th>Action</th>
+            </tr>
+     </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <div class="expend">
+        <h2>Thông tin sinh viên</h2>
+        <table>
+            <tr>
+                <th>Avatar</th>
+                <td><input  type="file" id="image"></td>
+            </tr>
+
+            <tr>
+                <th>Họ tên</th>
+                <td> <input type="text" id="name"></td>
+            </tr>
+    
+            <tr>
+                <th>Ngày sinh</th>
+                <td> <input type="date" id="birthday"></td>
+            </tr>
+    
+            <tr>
+                <th>Địa chỉ</th>
+               <td> <input type="text" id="address"></td>
+            </tr>
+    
+            <tr>
+                <th>Số điện thoại</th>
+                <td><input type="text" id="phonenumber"></td>
+            </tr>
+
+            <tr>
+                <th>Giới tính</th>
+                <td> 
+                    <input type="radio" name="gioiTinh" id="nam"> Nam
+                    <input type="radio" name="gioiTinh" id="nu"> Nữ
+                </td>
+            </tr>
+    
+            <tr>
+                <th>Action</th>
+                <td><button id="buttonSua" type="button" >Update</button>
+                    <button id="buttonAdd" type="button" onclick="Add()">Add</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
